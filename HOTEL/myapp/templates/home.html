@@ -1,0 +1,84 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+
+
+<section id="home1">
+  <img class='image' src="{% static 'asp1.png' %}" alt="My image"/>
+  <h1 class="h-primary ">Welcome to Searcho Mania</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae reprehenderit facilis dolor earum accusantium et quam, doloremque rerum repellendus tenetur quos. Doloribus, aliquid?</p>
+  <button class="btn-dark">Order Now</button>
+</section>
+        <section id="home12">
+          <section id="home15">
+          <h1 class="h-primary ">Our services</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis dolorum numquam minus. </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae reprehenderit facilis dolor earum accusantium et quam, doloremque rerum repellendus tenetur quos. Doloribus, aliquid?</p>
+          <button class="btn-dark">Order Now</button>
+        </section>
+        <section id="home13">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://images.unsplash.com/photo-1625449281218-cbb6183f0aec?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8cG9saWNlfHx8fHx8MTYzNTY5OTg1Ng&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Police station</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <form id="post-form" method="POST" action="police">
+                      {% csrf_token %}
+                    <button type="submit" class="btn btn-outline-primary">Take me to Nearby PS</button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://images.unsplash.com/photo-1494233914995-8c8b438d3f60?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8cmVzdHVyYW50fHx8fHx8MTYzNTY5OTY3MA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Restruants</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <!-- <a href="https://www.w3schools.com">Take me to Nearby Restruant</a> -->
+                    <form id="post-form" method="POST" action="resturant">
+                      {% csrf_token %}
+                    <button type="submit" class="btn btn-outline-primary">Take me to Nearby Restruant</button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://images.unsplash.com/photo-1619794555233-e563edf91173?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8aG9zcGl0YWx8fHx8fHwxNjM1NzAwMDA0&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Hospital</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <form id="post-form" method="POST" action="hospitals">
+                      {% csrf_token %}
+                    <button type="submit" class="btn btn-outline-primary">Take me to Nearby Hospital</button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="https://images.unsplash.com/photo-1536521249703-db8e8cadcc8f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8dG91cmlzdHx8fHx8fDE2MzU3MjYwNTI&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">TOURIST-PLACE</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <form id="post-form" method="POST" action="tourist">
+                      {% csrf_token %}
+                    <button type="submit" class="btn btn-outline-primary">Take me to Nearby TS</button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </section>
+      </section>
+          
+          
+    
+{% endblock content %}
