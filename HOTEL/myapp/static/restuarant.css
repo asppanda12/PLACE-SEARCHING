@@ -1,0 +1,10 @@
+#restu
+{
+    display: flex;
+    flex-direction: row;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+
+}
